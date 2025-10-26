@@ -13,7 +13,7 @@ This solution is meant to address a failure to install Android Build Tools throu
 - Alternatively, this can also be done through system settings. [See guide here](https://www.wikihow.com/Change-the-PATH-Environment-Variable-on-Windows). Just be sure to move the new entry to the *TOP* position. This is so the "wrapper" `tar.exe` is found first before the one at `System32\tar.exe`
 3. Restart UnityHub, and retry the installation of Android Build Tools.
 
-You can use the prebuilt `tar.exe` file found in [Releases](https://github.com/acampos81/unity-6.2-android-tar/releases/tag/v1.0), or you can build it from source with the following PowerShell command:
+You can use the prebuilt `tar.exe` file found in [Releases](https://github.com/acampos81/unity-6.2-android-tar/releases), or you can build it from source with the following PowerShell command:
 ```powershell
 dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true -o C:/Tools/bin/tar/
 ```
